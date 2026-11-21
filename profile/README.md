@@ -11,29 +11,28 @@
 <a href="https://github.com/llm011/buddy-proxy"><img src="https://img.shields.io/badge/🌐_buddy--proxy-Model_Gateway-D97706?style=for-the-badge&labelColor=0B1325" alt="buddy-proxy" /></a>
 <a href="https://github.com/llm011/ethan-tts"><img src="https://img.shields.io/badge/🎙️_ethan--tts-MLX_Voice_AI-0D9488?style=for-the-badge&labelColor=0B1325" alt="ethan-tts" /></a>
 <a href="https://github.com/llm011/dsh-ethan-connector"><img src="https://img.shields.io/badge/🔌_dsh--connector-ACP_%26_DSH-6366F1?style=for-the-badge&labelColor=0B1325" alt="dsh-ethan-connector" /></a>
-<a href="https://github.com/llm011/ethan-legal-skill"><img src="https://img.shields.io/badge/⚖️_ethan--legal--skill-Legal_AI-DB2777?style=for-the-badge&labelColor=0B1325" alt="ethan-legal-skill" /></a>
-<a href="https://github.com/llm011/router-models"><img src="https://img.shields.io/badge/🧭_router--models-ONNX_Router-7C3AED?style=for-the-badge&labelColor=0B1325" alt="router-models" /></a>
+<a href="https://github.com/orgs/llm011/repositories"><img src="https://img.shields.io/badge/📦_Repositories-Explore_All-334155?style=for-the-badge&labelColor=0B1325" alt="All Repositories" /></a>
 
 <br/>
 
-**构建真正好用的个人 AI 基础设施：多内核个人 Agent · 统一模型协议网关 · Apple Silicon 本地语音 · 领域技能生态**
+**构建真正好用的个人 AI 基础设施：多内核个人 Agent · 统一模型协议网关 · Apple Silicon 本地语音 · DSH 生态连接器**
 
 </div>
 
 ---
 
-## 🗺️ 全景协作架构 · Ecosystem Architecture
+## 🗺️ 核心协作架构 · Ecosystem Architecture
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/llm011/.github/main/assets/ecosystem-map.svg" alt="LLM011 Ecosystem Architecture" width="100%" />
 </div>
 
-> 各层模块既可**独立部署运行**，也可无缝串联为完整的个人 AI 工作流：
-> 前端 / [DeepSeek Harness](https://github.com/llm011/dsh-ethan-connector) ➔ [Ethan Agent](https://github.com/llm011/ethan-agent)（[语义路由](https://github.com/llm011/router-models) + [领域技能](https://github.com/llm011/ethan-legal-skill) + [本地语音](https://github.com/llm011/ethan-tts)）➔ [Buddy Proxy](https://github.com/llm011/buddy-proxy) 多渠道模型网关。
+> 各项目既可**独立部署运行**，也可无缝串联为完整的个人 AI 工作流：
+> 全端入口 / [DeepSeek Harness](https://github.com/llm011/dsh-ethan-connector) ➔ [Ethan Agent](https://github.com/llm011/ethan-agent)（多内核编排 · 工具 · 记忆 + [本地语音](https://github.com/llm011/ethan-tts)）➔ [Buddy Proxy](https://github.com/llm011/buddy-proxy) 多渠道模型网关。
 
 ---
 
-## 🚀 核心项目 · Flagship Projects
+## 🚀 主力项目 · Featured Projects
 
 <table>
 <tr>
@@ -112,17 +111,6 @@
 
 ---
 
-## 🧩 路由器、领域技能与生态组件 · Modules & Ecosystem
-
-| 项目 | 类型 | 核心职责 | 关联生态 |
-| :--- | :---: | :--- | :--- |
-| 🧭 **[router-models](https://github.com/llm011/router-models)** | `ONNX / NLP` | `ethan-agent` 语义路由器运行时模型：BGE-small-zh-v1.5 INT8 量化 ONNX (24MB) + 19 类 LogisticRegression 分类头，支持 `ethan router pull` 按需拉取 | [ethan-agent](https://github.com/llm011/ethan-agent) |
-| ⚖️ **[ethan-legal-skill](https://github.com/llm011/ethan-legal-skill)** | `Skill · Python` | Ethan Agent「法律专家模式」单一可路由技能 `legal-assistant`：覆盖要件九步法分析、诉讼、合同三层四步审查、知产检索与 Mermaid/draw.io 法律可视化（13 条 playbook + 8 交付模板，CC-BY-NC） | [ethan-agent](https://github.com/llm011/ethan-agent) |
-| 📚 **[legal-skills](https://github.com/llm011/legal-skills)** | `Upstream Fork` | 面向法律从业者的 AI Agent Skills 集合（49 项技能，涵盖内容获取、格式转换与法律专业实务；上游源自 [cat-xierluo/legal-skills](https://github.com/cat-xierluo/legal-skills)） | [ethan-legal-skill](https://github.com/llm011/ethan-legal-skill) |
-| 👻 **[kiro-gateway](https://github.com/llm011/kiro-gateway)** | `Upstream Fork` | Kiro IDE / CLI（AWS CodeWhisperer / Amazon Q Developer）OpenAI & Anthropic 兼容代理网关，支持 Extended Thinking、Vision 与多账号故障转移（上游源自 [jwadow/kiro-gateway](https://github.com/jwadow/kiro-gateway)） | [buddy-proxy](https://github.com/llm011/buddy-proxy) |
-
----
-
 ## ⚡ 10 秒上手 · Quick Start
 
 <details>
@@ -167,15 +155,6 @@ python app.py
 
 </details>
 
-<details>
-<summary><b>⚖️ 在 Ethan Agent 中安装法律专家技能</b></summary>
-
-```python
-install_skill(source="llm011/ethan-legal-skill/skills/legal-assistant")
-```
-
-</details>
-
 ---
 
 ## 🛠️ 技术栈 · Tech Stack
@@ -185,7 +164,6 @@ install_skill(source="llm011/ethan-legal-skill/skills/legal-assistant")
 ![Python](https://img.shields.io/badge/Python_3.12+-3776AB?style=flat-square&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![ONNX](https://img.shields.io/badge/ONNX_Runtime-005CED?style=flat-square&logo=onnx&logoColor=white)
 ![Apple MLX](https://img.shields.io/badge/Apple_MLX-000000?style=flat-square&logo=apple&logoColor=white)
 ![Tauri](https://img.shields.io/badge/Tauri_2-24C8D8?style=flat-square&logo=tauri&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
@@ -199,6 +177,6 @@ install_skill(source="llm011/ethan-legal-skill/skills/legal-assistant")
 
 <br/>
 
-<sub>探索全部公开仓库：<a href="https://github.com/orgs/llm011/repositories">github.com/orgs/llm011/repositories</a></sub>
+<sub>探索更多仓库与上游镜像：<a href="https://github.com/orgs/llm011/repositories">github.com/orgs/llm011/repositories</a></sub>
 
 </div>
