@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="LLM011 - Personal AI Agent Ecosystem">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060913"/>
+      <stop offset="50%" stop-color="#0B1325"/>
+      <stop offset="100%" stop-color="#111B33"/>
+    </linearGradient>
+
+    <radialGradient id="glowCyan" cx="22%" cy="35%" r="48%">
+      <stop offset="0%" stop-color="#00D2FF" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#00D2FF" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowViolet" cx="82%" cy="62%" r="50%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="45%" stop-color="#A5F3FC"/>
+      <stop offset="100%" stop-color="#C4B5FD"/>
+    </linearGradient>
+
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D2FF" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#00D2FF" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#8B5CF6" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="cardStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.45"/>
+      <stop offset="50%" stop-color="#818CF8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#C084FC" stop-opacity="0.4"/>
+    </linearGradient>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1E293B" stroke-width="0.7" stroke-opacity="0.45"/>
+    </pattern>
+
+    <clipPath id="frameClip">
+      <rect x="2" y="2" width="1196" height="296" rx="18"/>
+    </clipPath>
+
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#frameClip)">
+    <!-- Base & Grid -->
+    <rect width="1200" height="300" fill="url(#bg)"/>
+    <rect width="1200" height="300" fill="url(#grid)"/>
+    <rect width="1200" height="300" fill="url(#glowCyan)"/>
+    <rect width="1200" height="300" fill="url(#glowViolet)"/>
+
+    <!-- Top subtle scan bar -->
+    <rect x="0" y="0" width="1200" height="2.5" fill="url(#accentLine)"/>
+
+    <!-- Right-side Neural Constellation Graphic -->
+    <g opacity="0.92">
+      <!-- Orbit Rings -->
+      <circle cx="965" cy="148" r="106" fill="none" stroke="#1E3A5F" stroke-width="1" stroke-dasharray="4 6">
+        <animateTransform attributeName="transform" type="rotate" from="0 965 148" to="360 965 148" dur="42s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="965" cy="148" r="72" fill="none" stroke="#312E81" stroke-width="1.1" stroke-dasharray="8 5">
+        <animateTransform attributeName="transform" type="rotate" from="360 965 148" to="0 965 148" dur="28s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Signal Paths -->
+      <path id="sig1" d="M 835 100 Q 905 70 965 148 T 1100 112" fill="none" stroke="#38BDF8" stroke-width="1.3" stroke-opacity="0.35"/>
+      <path id="sig2" d="M 830 205 Q 910 225 965 148 T 1105 196" fill="none" stroke="#A78BFA" stroke-width="1.3" stroke-opacity="0.35"/>
+      <path id="sig3" d="M 965 44 L 965 252" fill="none" stroke="#22D3EE" stroke-width="1" stroke-opacity="0.22"/>
+
+      <!-- Flowing Pulses -->
+      <circle r="3.2" fill="#38BDF8" filter="url(#softGlow)">
+        <animateMotion dur="4.2s" repeatCount="indefinite" path="M 835 100 Q 905 70 965 148 T 1100 112"/>
+      </circle>
+      <circle r="3.2" fill="#C084FC" filter="url(#softGlow)">
+        <animateMotion dur="5.1s" repeatCount="indefinite" path="M 830 205 Q 910 225 965 148 T 1105 196"/>
+      </circle>
+
+      <!-- Outer Nodes -->
+      <g fill="#0F172A" stroke="#38BDF8" stroke-width="1.6">
+        <circle cx="835" cy="100" r="14"/>
+        <circle cx="830" cy="205" r="14"/>
+        <circle cx="1100" cy="112" r="14"/>
+        <circle cx="1105" cy="196" r="14"/>
+      </g>
+      <g font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#7DD3FC" text-anchor="middle" font-weight="600">
+        <text x="835" y="103">MCP</text>
+        <text x="830" y="208">ACP</text>
+        <text x="1100" y="115">TTS</text>
+        <text x="1105" y="199">API</text>
+      </g>
+
+      <!-- Core Hub -->
+      <circle cx="965" cy="148" r="34" fill="#0B1224" stroke="#38BDF8" stroke-width="2" filter="url(#softGlow)"/>
+      <circle cx="965" cy="148" r="34" fill="none" stroke="#38BDF8" stroke-width="1.5" opacity="0.5">
+        <animate attributeName="r" values="34;46;34" dur="3.4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.55;0;0.55" dur="3.4s" repeatCount="indefinite"/>
+      </circle>
+      <text x="965" y="144" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="11" fill="#E0F2FE" text-anchor="middle" font-weight="700">ETHAN</text>
+      <text x="965" y="160" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="9.5" fill="#38BDF8" text-anchor="middle">CORE v2</text>
+    </g>
+
+    <!-- Left Content Block -->
+    <g transform="translate(56, 46)">
+      <!-- Terminal Pill -->
+      <rect x="0" y="0" width="232" height="28" rx="14" fill="#0F172A" stroke="#1E3A5F" stroke-width="1"/>
+      <circle cx="16" cy="14" r="4" fill="#22C55E">
+        <animate attributeName="opacity" values="1;0.35;1" dur="2.2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="28" y="18" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace" font-size="12" fill="#94A3B8">
+        github.com/<tspan fill="#38BDF8" font-weight="600">llm011</tspan>
+      </text>
+
+      <!-- Main Title -->
+      <text x="0" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="60" font-weight="800" letter-spacing="2" fill="url(#titleGrad)">
+        LLM011
+      </text>
+
+      <!-- Subtitle -->
+      <text x="2" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="19" font-weight="500" fill="#CBD5E1">
+        Personal AI Agent Ecosystem · 个人 AI 智能体与基础设施空间
+      </text>
+      <text x="2" y="158" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" fill="#94A3B8">
+        多内核个人 Agent · 多渠道模型协议网关 · Apple Silicon 本地语音 · 语义路由与法律领域技能
+      </text>
+
+      <!-- Capability Tags -->
+      <g transform="translate(0, 182)" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, sans-serif" font-size="12" font-weight="600">
+        <rect x="0" y="0" width="136" height="30" rx="8" fill="#0E1E36" stroke="#0284C7" stroke-opacity="0.65"/>
+        <text x="68" y="19" fill="#7DD3FC" text-anchor="middle">Multi-Kernel Agent</text>
+
+        <rect x="148" y="0" width="128" height="30" rx="8" fill="#17153B" stroke="#7C3AED" stroke-opacity="0.65"/>
+        <text x="212" y="19" fill="#C4B5FD" text-anchor="middle">Model Gateway</text>
+
+        <rect x="288" y="0" width="128" height="30" rx="8" fill="#0B252B" stroke="#0D9488" stroke-opacity="0.65"/>
+        <text x="352" y="19" fill="#5EEAD4" text-anchor="middle">MLX Voice AI</text>
+
+        <rect x="428" y="0" width="138" height="30" rx="8" fill="#1E1B2E" stroke="#6366F1" stroke-opacity="0.65"/>
+        <text x="497" y="19" fill="#A5B4FC" text-anchor="middle">Semantic Router</text>
+
+        <rect x="578" y="0" width="122" height="30" rx="8" fill="#251A2E" stroke="#DB2777" stroke-opacity="0.55"/>
+        <text x="639" y="19" fill="#F9A8D4" text-anchor="middle">Domain Skills</text>
+      </g>
+    </g>
+
+    <!-- Bottom subtle accent -->
+    <rect x="0" y="297.5" width="1200" height="2.5" fill="url(#accentLine)"/>
+  </g>
+
+  <!-- Crisp Outer Border -->
+  <rect x="2" y="2" width="1196" height="296" rx="18" fill="none" stroke="url(#cardStroke)" stroke-width="1.5"/>
+</svg>

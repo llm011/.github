@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 110" width="1200" height="110" role="img" aria-label="LLM011 Footer">
+  <defs>
+    <linearGradient id="fBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#060913"/>
+      <stop offset="50%" stop-color="#0D162B"/>
+      <stop offset="100%" stop-color="#060913"/>
+    </linearGradient>
+    <linearGradient id="wave1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D2FF" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#7C3AED" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#00D2FF" stop-opacity="0.15"/>
+    </linearGradient>
+    <clipPath id="fClip">
+      <rect x="2" y="2" width="1196" height="106" rx="14"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#fClip)">
+    <rect width="1200" height="110" fill="url(#fBg)"/>
+    <path d="M 0 65 Q 300 25 600 65 T 1200 65 L 1200 110 L 0 110 Z" fill="url(#wave1)">
+      <animate attributeName="d"
+        values="M 0 65 Q 300 25 600 65 T 1200 65 L 1200 110 L 0 110 Z;
+                M 0 60 Q 300 95 600 60 T 1200 60 L 1200 110 L 0 110 Z;
+                M 0 65 Q 300 25 600 65 T 1200 65 L 1200 110 L 0 110 Z"
+        dur="9s" repeatCount="indefinite"/>
+    </path>
+    <text x="600" y="47" font-family="'SF Mono', 'JetBrains Mono', Menlo, monospace" font-size="13.5" font-weight="700" fill="#E0F2FE" text-anchor="middle" letter-spacing="1">
+      LLM011 · BUILD PERSONAL AI THAT ACTUALLY WORKS FOR YOU
+    </text>
+    <text x="600" y="73" font-family="-apple-system, 'PingFang SC', sans-serif" font-size="12.5" fill="#94A3B8" text-anchor="middle">
+      开源 · 模块化 · 本地优先 · 跨内核协作  —  Star &amp; Explore github.com/llm011
+    </text>
+  </g>
+  <rect x="2" y="2" width="1196" height="106" rx="14" fill="none" stroke="#1E293B" stroke-width="1.2"/>
+</svg>
